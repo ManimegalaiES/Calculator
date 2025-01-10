@@ -1,0 +1,84 @@
+header{
+    color: white;
+    text-align: center;
+    height: 100px;
+    text-shadow: 2px 2px black;
+}
+header h1{
+    padding-top: 50px;
+    animation: shake 2s infinite;
+}
+
+@keyframes shake{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+body {
+    background-image: url(image6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 720px; 
+}
+
+
+#division {
+    width: 400px; 
+    background: rgba(255, 255, 255, 0.65);
+    padding: 20px;
+    padding-bottom: 0%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#result {
+    width: 100%;
+    height: 50px; 
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+table {
+    width: 100%;
+    border-spacing: 10px; 
+}
+
+button {
+    width: 80px; 
+    height: 60px; 
+    font-size: 18px; 
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-image: linear-gradient(rgb(117, 189, 207),rgb(37, 153, 199));
+    transform: scale(1.5);
+}
+
+
+button:active {
+    transform: scale(0.95); 
+}
